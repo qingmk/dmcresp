@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/qingmk/dmcresp/xpyun-opensdk/util"
+	"github.com/qingmk/dmcresp/xpyunopensdkchinese/util"
 )
 
 const ROW_MAX_CHAR_LEN = 32

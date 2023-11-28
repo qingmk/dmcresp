@@ -3,7 +3,7 @@ package model
 import (
 	"strconv"
 
-	"github.com/qingmk/dmcresp/xpyun-opensdk/util"
+	"github.com/qingmk/dmcresp/xpyunopensdkchinese/util"
 )
 
 type RestRequest struct {

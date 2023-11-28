@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/qingmk/dmcresp/xpyun-opensdk/model"
+	"github.com/qingmk/dmcresp/xpyunopensdkchinese/model"
 )
 
 /**

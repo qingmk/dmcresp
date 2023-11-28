@@ -1,6 +1,6 @@
 package service
 
-import "github.com/qingmk/dmcresp/xpyun-opensdk/model"
+import "github.com/qingmk/dmcresp/xpyunopensdkchinese/model"
 
 const BASE_URL = "https://open.xpyun.net/api/openapi"
 

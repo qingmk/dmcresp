@@ -3,9 +3,10 @@ package chinese
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/qingmk/dmcresp/xpyun-opensdk/model"
-	"github.com/qingmk/dmcresp/xpyun-opensdk/service"
-	"github.com/qingmk/dmcresp/xpyun-opensdk/util"
+
+	"github.com/qingmk/dmcresp/xpyunopensdkchinese/model"
+	"github.com/qingmk/dmcresp/xpyunopensdkchinese/service"
+	"github.com/qingmk/dmcresp/xpyunopensdkchinese/util"
 )
 
 /*
