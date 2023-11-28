@@ -2,7 +2,10 @@ module github.com/qingmk/dmcresp
 
 go 1.21.3
 
-require github.com/zeromicro/go-zero v1.6.0
+require (
+	github.com/zeromicro/go-zero v1.6.0
+	golang.org/x/text v0.13.0
+)
 
 require (
 	github.com/fatih/color v1.15.0 // indirect
