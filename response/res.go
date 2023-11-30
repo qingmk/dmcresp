@@ -7,7 +7,7 @@ import (
 	"github.com/zeromicro/go-zero/rest/httpx"
 )
 
-func Response(ctx context.Context, w http.ResponseWriter, code int, msg string, data RespDataPayload) {
+func Response(ctx context.Context, w http.ResponseWriter, code int, msg string, data RespData) {
 	var body AckBody
 	body.Code = code
 	body.Data = data
@@ -29,7 +29,7 @@ func OkWithMsg(ctx context.Context, w http.ResponseWriter, msg string) {
 	httpx.OkJsonCtx(ctx, w, body)
 }
 
-func OkWithData(ctx context.Context, w http.ResponseWriter, data RespDataPayload) {
+func OkWithData(ctx context.Context, w http.ResponseWriter, data RespData) {
 	var body AckBody
 	body.Code = 0
 	body.Msg = "成功"
@@ -37,7 +37,7 @@ func OkWithData(ctx context.Context, w http.ResponseWriter, data RespDataPayload
 	httpx.OkJsonCtx(ctx, w, body)
 }
 
-func OkWithMsgData(ctx context.Context, w http.ResponseWriter, msg string, data RespDataPayload) {
+func OkWithMsgData(ctx context.Context, w http.ResponseWriter, msg string, data RespData) {
 	var body AckBody
 	body.Code = 0
 	body.Msg = msg
@@ -59,7 +59,7 @@ func FailedWithMsg(ctx context.Context, w http.ResponseWriter, msg string) {
 	httpx.OkJsonCtx(ctx, w, body)
 }
 
-func FailedWithMsgData(ctx context.Context, w http.ResponseWriter, msg string, data RespDataPayload) {
+func FailedWithMsgData(ctx context.Context, w http.ResponseWriter, msg string, data RespData) {
 	var body AckBody
 	body.Code = 0
 	body.Msg = msg
@@ -67,7 +67,7 @@ func FailedWithMsgData(ctx context.Context, w http.ResponseWriter, msg string, d
 	httpx.OkJsonCtx(ctx, w, body)
 }
 
-func FailedWithCodeMsgData(ctx context.Context, w http.ResponseWriter, code int, msg string, data RespDataPayload) {
+func FailedWithCodeMsgData(ctx context.Context, w http.ResponseWriter, code int, msg string, data RespData) {
 	var body AckBody
 	body.Code = code
 	body.Msg = msg
