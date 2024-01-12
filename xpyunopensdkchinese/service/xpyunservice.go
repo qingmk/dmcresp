@@ -128,7 +128,7 @@ func XpYunQueryPrinterStatus(request *model.PrinterRequest) *model.XPYunResp {
 * @param request
 * @return
 */
-func XpYunQueryPrintersStatus(request *model.PrinterRequest) *model.XPYunResp {
+func XpYunQueryPrintersStatus(request *model.DelPrinterRequest) *model.XPYunResp {
 	url := BASE_URL + "/xprinter/queryPrintersStatus"
 
 	return xpyunPostJson(url, request)
